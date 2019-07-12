@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainForm" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="564.0" prefWidth="958.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaFX.claim.Controller">
+    <children>
+        <Button fx:id="buttonGetAccess" layoutX="526.0" layoutY="500.0" mnemonicParsing="false" onAction="#getAccess" prefHeight="31.0" prefWidth="130.0" text="Предоставить доступ">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+
+        <TextField fx:id="timeTextField" editable="false" layoutX="479.0" layoutY="457.0" promptText="Введите время">
+            <font>
+                <Font size="15.0" />
+            </font></TextField>
+        <ComboBox fx:id="employerTextField" layoutX="413.0" layoutY="49.0" prefHeight="25.0" prefWidth="174.0" promptText="Выберите исполнителя" />
+        <ComboBox fx:id="clientTextField" layoutX="595.0" layoutY="49.0" prefHeight="25.0" prefWidth="174.0" promptText="Выберите отправителя" />
+        <Label fx:id="labelDate" layoutX="225.0" layoutY="24.0" text="Дата заявки">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label fx:id="labelTime" layoutX="438.0" layoutY="74.0" text="Время заявки">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label fx:id="labelSender" layoutX="595.0" layoutY="26.0" text="Отправитель">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label fx:id="labelImplementer" layoutX="413.0" layoutY="24.0" text="Исполнитель">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label fx:id="labelStatus" layoutX="789.0" layoutY="28.0" text="Статус заявки">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <TextArea fx:id="descriptionTextArea" layoutX="423.0" layoutY="119.0" prefHeight="297.0" prefWidth="381.0" text="Введите дополнительные данные" />
+        <ComboBox fx:id="statusTextFiled" layoutX="789.0" layoutY="49.0" prefWidth="150.0" promptText="Выберите статус " />
+        <Label fx:id="labelDescription" layoutX="281.0" layoutY="121.0" text="Описание заявки">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label fx:id="labelMessage" layoutX="194.0" layoutY="90.0" prefHeight="17.0" prefWidth="338.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <TextField fx:id="idTextField" editable="false" layoutX="266.0" layoutY="96.0" visible="false" />
+        <Button fx:id="buttonListClaims" layoutX="530.0" layoutY="522.0" mnemonicParsing="false" onAction="#getListClaims" prefHeight="31.0" prefWidth="130.0" text="Список Заявок">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+      <DatePicker layoutY="24.0" prefHeight="288.0" prefWidth="174.0" />
+    </children>
+</AnchorPane>
